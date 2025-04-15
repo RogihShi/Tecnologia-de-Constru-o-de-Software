@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <title>Home - Cinema</title>
+</head>
+<body>
+
+  <!-- Menu -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Cinema Control</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="cadastro-salas.html">Cadastro de Salas</a></li>
+          <li class="nav-item"><a class="nav-link" href="cadastro-filmes.html">Cadastro de Filmes</a></li>
+          <li class="nav-item"><a class="nav-link" href="cadastro-sessoes.html">Cadastro de Sessões</a></li>
+          <li class="nav-item"><a class="nav-link" href="venda-ingressos.html">Venda de Ingressos</a></li>
+          <li class="nav-item"><a class="nav-link" href="sessoes.html">Sessões Disponíveis</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <div class="container mt-4">
+    <h3 class="mb-4">Filmes em Exibição</h3>
+    <div class="row" id="listaFilmes">
+      <!-- Os filmes serão inseridos dinamicamente com JavaScript futuramente -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card mb-4">
+          <img src="./img/senhor-dos-aneis.webp" alt="Poster de Senhor dos Anéis" class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title">Senhor dos Anéis</h5>
+            <p class="card-text">
+              Uma jornada épica pela Terra Média, onde Frodo e seus amigos enfrentam perigos inimagináveis para destruir o Um Anel e salvar o mundo das forças do mal lideradas por Sauron.
+            </p>
+            <a href="venda-ingressos.html" class="btn btn-primary">Comprar Ingressos</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card mb-4">
+          <img src="./img/dmc.webp" alt="dmc horrivel" class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title">Lady May Cry</h5>
+            <p class="card-text">
+              Historia sem sentido, mais uma adaptação lixo feita pela netflix (ESTRAGOU A OBRA!!).
+            </p>
+            <a href="venda-ingressos.html" class="btn btn-primary">Comprar Ingressos</a>
+          </div>
+        </div>
+      </div>
+      <!-- Duplicar esse card para exemplo é ok por enquanto, mas depois vamos gerar com JS -->
+    </div>
+  </div>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
